@@ -33,6 +33,8 @@ console.log(typeof "Ashwani")
 
 console.log(typeof age)
 
-console.log(typeof null)       //oblect
+console.log(typeof null)       //object
 
 console.log(typeof undefined)        //undefined
+
+console.log(typeof isloggedIn)      // boolean
