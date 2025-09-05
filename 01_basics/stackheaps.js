@@ -1,4 +1,4 @@
-//     Heap memoy(premitive deatypes) ,     Stack memory(non-premitive)
+//     Heap memoy(non-premitive deatypes) ,     Stack memory(premitive)
 
 
 let myname = "Ashwani"
