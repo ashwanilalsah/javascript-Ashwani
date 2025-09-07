@@ -3,7 +3,7 @@
 // // [{}, {}, {}]            object
 // const arr = [1, 2, 3, 4, 5]
 // for (const num of arr) {
-//     // console.log(arr)
+    // console.log(arr)              not defined
 //     console.log(num)
 // }
 
@@ -22,5 +22,5 @@ map.set("IN", "india")              //duplicate value not accessed
 // console.log(Map)
 
 for (const [key, value] of map) {
-    console.log(key, ':-', value)
+    // console.log(key, ':-', value)
 }
