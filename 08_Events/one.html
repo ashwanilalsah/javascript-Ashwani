@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Event</title>
+</head>
+<body>
+    <h2>Amazing image</h2>
+    <div style="background-color: #414141;">
+        <ul id="images">
+            <li>
+                <img width = "200px" height="200px" id="photoShop" src="https://images.pexels.com/photos/33678100/pexels-photo-33678100.jpeg" alt="">
+            </li>
+            <li>
+                <img width = "200px" height="200px" id="Goat" src="https://images.pexels.com/photos/27605479/pexels-photo-27605479.jpeg" alt="">
+            </li>
+
+             <li>
+            <img width = "200px" height="200px" id="Horse" src="https://images.pexels.com/photos/33551085/pexels-photo-33551085.jpeg" alt="">
+        </li>
+        <li>
+            <img width = "200px" height="200px" id="Girl" src="https://images.pexels.com/photos/33272076/pexels-photo-33272076.jpeg" alt="">
+        </li>
+
+        <li><a style="color: aliceblue;" href="https://www.google.com" id="google">google</a></li>
+
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('Goat').onclick = function() {
+    //     alert("Goat Clicked")
+    // }
+
+    //attachEvent
+    //jQuery
+
+    // type, timestamp, defaultPrevented,
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, keyCode
+
+    // document.getElementById('Goat').addEventListener('click', function(){
+    //     alert("Goat Clicked")
+    // })
+    // document.getElementById('Goat').addEventListener('click', function(e){
+    //     console.log("Clicked on goat again")
+    // })
+
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("Clicked inside ul")
+    // }, false)
+
+    // document.getElementById('Goat').addEventListener('click', function(e){
+    //     console.log("Goat clicked")
+    //     e.stopPropagation();
+    // }, false)
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("Google Clicked")
+    // }, false)
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        // console.log(e.target.parentNode);
+        // let removeIt = e.target.parentNode;
+        // removeIt.remove();
+        //removeIt.parentNode.removeChild(removeIt);  we can also use this for remove on clicking on the images
+        // we can also remove the li from this too.
+        
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG')   // if we do not check it, it will remove all imge if we click on li(google).
+    {
+        console.log(e.target.id);
+            let removeIt = e.target.parentNode;
+            removeIt.remove();
+    }
+
+    })
+
+</script>
+</html>
