@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+  border-collapse: collapse; /* remove double borders */
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+th, td {
+  border: 2px solid #333; /* box border */
+  padding: 12px 15px;     /* spacing inside box */
+}
+
+thead {
+  background-color: #444;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* zebra effect */
+}
